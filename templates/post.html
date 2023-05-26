@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<title>{{posts.title}}</title>
+<body>
+  <div class="header">
+    <p>DJANGO WORLD</p>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+          <h2>{{posts.title}}</h2>
+          <h5>{{posts.created_at}}</h5>
+          <div id="content">
+            <p>{{posts.body | safe}}</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="/" style="text-decoration: none;color: black;">
+    <br><br><p>Back to Main Page</p>
+  </a>
+</body>
+</html>

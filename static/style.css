@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body 
+{
+    font-family: Arial;
+    padding: 20px;
+    background: rgb(228 255 228);
+}
+  
+.header 
+{
+    padding: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+  
+.leftcolumn 
+{   
+    float: left;
+    width: 100%;
+}
+  
+.card 
+{
+     background-color: rgb(195 233 195);
+     padding: 20px;
+     margin-top: 20px;
+}
+  
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 800px) 
+{
+    .leftcolumn, .rightcolumn 
+    {   
+      width: 100%;
+      padding: 0;
+    }
+}
+
+#content{
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-weight: lighter; 
+}
